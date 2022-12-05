@@ -1,0 +1,66 @@
+/* 
+  name: copy clipboard project css;
+  developer: mehdi abshari;
+  production date: 1401-09-14;
+  description: ... .; 
+*/
+
+/* Start of Fonts */
+@font-face {
+  font-family: Montserrat-Thin;
+  src: url('../Fonts/Montserrat-Thin.ttf');
+}
+/* End of Fonts */
+
+/* Start of All Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #03a9f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* End of All Selector */
+
+/* Start of selection */
+::selection {
+  background: #03a9f4;
+}
+/* End of selection */
+
+/* Start of container */
+.container {
+  width: 400px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+/* End of container */
+
+/* Start of textarea and button */
+.container :where(textarea, button) {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 5px 0;
+}
+.container textarea {
+  font-family: Montserrat-Thin;
+  font-weight: bold;
+  border: 1px solid #999;
+}
+.container button {
+  font-family: Montserrat-Thin;
+  font-weight: bold;
+  background: #b3e5fc;
+  transition: all 1s;
+}
+/* End of textarea and button */
