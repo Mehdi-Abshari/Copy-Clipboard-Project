@@ -1,48 +1,35 @@
-/* 
-  name: copy clipboard project css;
-  developer: mehdi abshari;
-  production date: 1401-09-14;
-  description: ... .; 
-*/
-
-/* Start of Fonts */
+/* Font */
 @font-face {
   font-family: Montserrat-Thin;
   src: url('../Fonts/Montserrat-Thin.ttf');
 }
-/* End of Fonts */
 
-/* Start of All Selector */
+/* All Selector */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  background: #03a9f4;
+  background: #1d7773;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-/* End of All Selector */
 
-/* Start of selection */
+/* Selection */
 ::selection {
-  background: #03a9f4;
+  background: rgba(29, 119, 115, 0.7);
 }
-/* End of selection */
 
-/* Start of container */
+/* Container Style */
 .container {
   width: 400px;
-  background: #fff;
+  background: #e1d0f8;
   padding: 30px;
   border-radius: 10px;
 }
-/* End of container */
-
-/* Start of textarea and button */
 .container :where(textarea, button) {
   outline: none;
   border: none;
@@ -52,15 +39,20 @@ body {
   font-size: 15px;
   margin: 5px 0;
 }
+
+/* textArea Style */
 .container textarea {
+  background: transparent;
+  resize: none;
   font-family: Montserrat-Thin;
   font-weight: bold;
   border: 1px solid #999;
 }
+
+/* Button Style */
 .container button {
   font-family: Montserrat-Thin;
   font-weight: bold;
-  background: #b3e5fc;
+  background: rgba(29, 119, 115, 0.8);
   transition: all 1s;
 }
-/* End of textarea and button */
